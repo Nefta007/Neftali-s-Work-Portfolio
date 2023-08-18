@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Neftali's Work Portfolio</title>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/reset.css"/>
+    </head>
+</html>
+
+<!-- We will start by creating the body and the header along with including a temporary picture of myslef-->
+<body>
+    <header>
+        <h1 class="page-header"> 
+            Neftali Percastegui
+        </h1>
+        <nav>
+            <!-- We are creating the navigation part of the header that will go to the specific part of the webpage when they are clicked -->
+            <ul>
+                <li><a href="#About-Me">About Me</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Contact-Me">Contact Me</a></li>
+                <li><a href="#Resume">Resume</a></li>
+            </ul>
+        </nav>
+        <!-- Here we are including the temporary picture of myself -->
+        <div class="picture-of-Neftali" alt="Here is a picture of Neftali Percastegui"></div>
+    </header>
+
+    <main>
+        <!-- we want to create a section for About me which will hold 3 different parts, the title, the border line, and the paragraph-->
+        <section id="About-Me" class="main-content">
+            <!-- this is the first part in the information where the title will go -->
+            <div class="part-one">
+                <h2 class="title">About Me</h2>
+            </div>
+
+            <!-- next we have where the information will go 
+            within this part we will include the border and also have the paragraph portion
+            where the space the paragraph covers will be set with flex
+            -->
+            <div class="About-Me-Info">
+
+            <!-- what follows is the border line which was added into this portion of the code in order to better match the example website-->                
+                <div class="border-line"></div>
+                
+                <!-- paragraph portion is set in order to adjust its size within the given space -->
+                <div class="paragraph-portion">
+                    <p>Hello, my name is Neftali Percastegui, and I am currently trying to become a web developer. I am 22 years old and currently in college getting a
+                        degree in electrical engineering. Through this website I hope to show how I have grown as a coder and web developer, as well as show samples with
+                        my portfolio.
+                    <p>
+                </div>
+            </div>
+        </section>
+
+            <!-- creating of the work section -->
+        <section id="Work" class="main-content">
+            <!-- first part of the section: the title -->
+            <div class="part-one">
+                <h2 class="title">Work</h2>
+            </div>
+                <!-- this provides formating that we used in the prior parts -->
+            <div class="About-Me-Info">
+                    <!-- the same border will not work due to a difference in size of the material so we shall create a new border -->
+                <div class="border-line-two"></div>
+                <!-- this will provide a container for the overall grid -->
+                <div class="grid-container">
+                            <!-- This part will set up the images along with their links and alternative name space has been put inbetween each image to make it more readable-->
+                    <div class="grid">
+                        <figure class="gallery-item gallery-item-1">
+                            <a href="https://nefta007.github.io/mini-project-1/">
+                            <img src="assets/images/mini-project-one.png" class="gallery-image" alt="first project">
+                        </a>
+                        </figure>
+    
+                        <figure class="gallery-item gallery-item-2">
+                            <a href="https://nefta007.github.io/mini-project-1/">
+                            <img src="assets/images/mini-project-two.png" class="gallery-image" alt="second project">
+                        </a>
+                        </figure>
+    
+                        <figure class="gallery-item gallery-item-3">
+                            <a href="https://github.com/Nefta007/module1-challenge">
+                            <img src="assets/images/module-1-challenge.png" class="gallery-image" alt="third project">
+                        </a>
+                        </figure>
+    
+                        <figure class="gallery-item gallery-item-4">
+                            <a href="https://github.com/Nefta007/pre-work-guide">
+                            <img src="assets/images/pre-work.png" class="gallery-image" alt="fourth project">
+                        </a>
+                        </figure>
+    
+                        <figure class="gallery-item gallery-item-5">
+                            <a href="https://github.com/Nefta007/first-day-repo">
+                            <img src="assets/images/first-repo.png" class="gallery-image" alt="fifth project">
+                        </a>
+                        </figure>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section id="Resume" class="main-content">
+
+            <div class="part-one">
+                <h2 class="title">Resume</h2>
+            </div>
+
+            <div class="About-Me-Info">
+                <!-- the same border will not work due to a difference in size of the material so we shall create a new border -->
+            <div class="border-line"></div>
+
+            <div class="paragraph-portion">
+                <p>
+                    Please click on link to see my Resume <a href="https://docs.google.com/document/d/1_QG-nuqkYNGtVjbDza8OAcXao_kakvHn/edit?usp=sharing&ouid=107910275213586943995&rtpof=true&sd=true">click here</a>
+                <p>
+            </div>
+        </div>
+        </section>
+
+        <section id="Contact-Me" class="main-content">
+            <div class="part-one">
+            <h2 class="title">Contact Me</h2>
+            </div>
+            <div class="About-Me-Info">
+            <div class="border-line"></div>
+            <nav class="Contact">
+                <ul>
+                    <li><a href="mailto: nperc001@ucr.edu">nperc001@ucr.edu</a></li>
+                    <li><a href="tel: 555-555-555">555.555.555</a></li>
+                    <li> <a href="https://github.com/Nefta007">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+        </section>
+            
+
+    </main>
+</body>

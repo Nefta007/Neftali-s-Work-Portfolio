@@ -1,0 +1,222 @@
+/* univeral selector */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* here we will set the appearance of the header and the coresponding links
+this includes the font the and alignment of the text using the display:flex 
+as well as the space between the title and the links
+*/
+header{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* this will set the specifically alter the navigation section of the header
+this will further make sure that the navigation links align with the title and 
+also changes its font size to something that fits with the overall apearance
+*/
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+/* sets the style type of list */
+header nav ul {
+    list-style-type: none;
+}
+
+/* this makes sure that the links are in a row instead of a column as well as sets 
+spaces between the links
+*/
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* sets the color of the links and adds an underline under each of them */
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+/* this will set the image of Neftali Percastegui*/
+.picture-of-Neftali{
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/IMG_7169.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+/* sets the margin for the title as well as puts an underline on it */
+h2{
+    margin: 60px;
+    text-decoration: underline;
+}
+
+/* aligns the text to the left, adds a margin on the left side and adds a font size */
+p{
+    text-align: left ;
+    font-size: 22px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+/* this sets the section for the About me portion, where all parts will go into. it is the overall border of the section 
+this will align the parts, as well as set the margin to place the text 10px from the top and 100px from the left and the 
+width of the text
+*/
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 50px;
+    width: 90%;
+    align-items: flex-start;
+}
+
+/* helps us split the different sections so its easier to read */
+section{
+    padding: 15px;
+}
+
+/* this sets the space around the title */
+.part-one{
+    display: flex;
+    justify-content: left;
+}
+
+/* this sets up the parameters for the title such as the margin to the left of it,  the width or space it takes up
+its font, the color and sets up a flex container
+*/
+.title{
+    margin: 0 0 0 60px;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0072bb;
+}
+
+/* this sets the border of that goes to the left of the paragraph */
+.border-line{
+    border-right: 2px solid;
+    height: 150px;
+    flex: 2 auto; /* this will make sure that the border is always aligned with the title */
+}
+
+/* sets up the format for the information that is found inside of this class */
+.About-Me-Info{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* sets up flex grow to 100*/
+.paragraph-portion{
+    flex: 100;
+}
+
+
+/* this sets up the second border for the work I am presenting */
+.border-line-two{
+    border-right: 2px solid;
+    height: 520px;
+    flex: 2 2%; /* this will make sure that the border is always aligned with the title */
+    margin-bottom: 300px;
+}
+
+/* this sets up the overall container for the second part, this is where all 3 parts go into  */
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    width: 80%;
+    flex: 90%; 
+}
+
+/* this sets up the grid where the work is set on, --- personal note use freeCodeCamp gallery as refrence*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 8vw);
+    grid-gap: 15px;
+    margin-left: 30px;
+}
+
+/* this part sets up the images sizes within the grid */
+.gallery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* the next 5 parts set up the images with regards to their placement on the grid */
+.gallery-item-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.gallery-item-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.gallery-item-4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-item-5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.gallery-item{
+    position: relative;
+}
+
+#Contact-Me ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+
+  #Contact-Me li{
+    display: inline-block;
+    text-decoration: underline;
+}
+#Contact-Me li a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
